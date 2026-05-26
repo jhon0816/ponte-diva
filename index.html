@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ponte Diva Spa en Cali: uñas, pestañas punto a punto, cejas en henna, depilación en cera y servicios de belleza. Agenda por WhatsApp."
+    />
+    <title>Ponte Diva Spa | Uñas y Belleza en Cali</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./assets/img/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              divaPink: "#f472b6",
+              divaRose: "#fff1f6",
+              divaGold: "#c99a2e",
+              divaGoldLight: "#f6d77a",
+              divaInk: "#171014",
+              divaCream: "#fffaf3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-divaCream text-divaInk antialiased">
+    <header class="sticky top-0 z-50 border-b border-pink-100 bg-white/90 shadow-sm backdrop-blur-md">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+        <a href="#inicio" class="flex items-center gap-3" aria-label="Ponte Diva Spa">
+          <img
+            src="./assets/img/logo-display.jpg"
+            alt="Logo Ponte Diva Spa"
+            class="h-12 w-12 rounded-full object-cover ring-2 ring-divaGoldLight"
+          />
+          <div class="leading-tight">
+            <p class="text-sm font-extrabold text-divaInk">Ponte Diva Spa</p>
+            <p class="text-xs font-medium text-divaGold">By Diana</p>
+          </div>
+        </a>
+
+        <button
+          id="menuToggle"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-pink-100 text-divaInk md:hidden"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div
+          id="siteMenu"
+          class="absolute left-0 right-0 top-[72px] hidden border-t border-pink-100 bg-white px-4 py-4 shadow-md md:static md:flex md:items-center md:gap-6 md:border-0 md:bg-transparent md:p-0 md:shadow-none"
+        >
+          <a class="block py-2 text-sm font-semibold text-gray-600 transition hover:text-divaPink md:py-0" href="#servicios">Servicios</a>
+          <a class="block py-2 text-sm font-semibold text-gray-600 transition hover:text-divaPink md:py-0" href="#galeria">Galería</a>
+          <a class="block py-2 text-sm font-semibold text-gray-600 transition hover:text-divaPink md:py-0" href="#experiencia">Experiencia</a>
+          <a class="block py-2 text-sm font-semibold text-gray-600 transition hover:text-divaPink md:py-0" href="#ubicacion">Ubicación</a>
+          <a
+            href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20agendar%20una%20cita%20en%20Ponte%20Diva."
+            target="_blank"
+            rel="noopener"
+            class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-divaPink to-divaGold px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-pink-500/20 transition hover:-translate-y-0.5 md:mt-0 md:w-auto"
+          >
+            <i class="fab fa-whatsapp"></i>
+            Agendar
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="relative flex min-h-[88vh] items-center overflow-hidden bg-divaRose">
+        <div class="absolute inset-0 z-0">
+          <img
+            src="./assets/img/work-1.jpeg"
+            alt="Trabajo de uñas realizado en Ponte Diva"
+            class="h-full w-full object-cover opacity-15"
+          />
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(246,215,122,0.45),transparent_28%),radial-gradient(circle_at_20%_10%,rgba(244,114,182,0.35),transparent_30%),linear-gradient(135deg,#fffaf3_0%,#fff1f6_55%,#fff_100%)]"></div>
+          <div class="absolute left-1/2 top-16 h-[520px] w-[520px] -translate-x-1/2 rounded-full border border-divaGold/20 bg-white/35 shadow-2xl shadow-pink-200/40"></div>
+          <img
+            src="./assets/img/logo-display.jpg"
+            alt=""
+            aria-hidden="true"
+            class="pointer-events-none absolute -right-8 top-1/2 hidden h-[min(72vw,520px)] w-[min(72vw,520px)] -translate-y-1/2 rounded-full object-cover opacity-[0.07] blur-[1px] lg:block"
+          />
+        </div>
+
+        <div class="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 px-4 py-20 lg:grid-cols-[1fr_0.95fr]">
+          <div class="space-y-6 text-center lg:text-left">
+            <div class="inline-flex items-center gap-2 rounded-full border border-divaGold/30 bg-white/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-divaGold shadow-lg shadow-pink-100">
+              <i class="fas fa-crown"></i>
+              Uñas, pestañas y belleza en Cali
+            </div>
+
+            <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-divaInk sm:text-5xl md:text-6xl">
+              Ponte diva con un look
+              <span class="block bg-gradient-to-r from-divaPink via-divaGold to-divaGoldLight bg-clip-text text-transparent">
+                delicado, brillante y femenino
+              </span>
+            </h1>
+
+            <p class="mx-auto max-w-xl text-base leading-relaxed text-gray-700 sm:text-lg lg:mx-0">
+              Servicios de uñas, cejas, pestañas y depilación pensados para que salgas lista, segura y con ese toque diva que se nota.
+            </p>
+
+            <div class="flex flex-col justify-center gap-4 pt-4 sm:flex-row lg:justify-start">
+              <a
+                href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20agendar%20una%20cita%20en%20Ponte%20Diva.%20%C2%BFQu%C3%A9%20cupos%20tienes%20disponibles?"
+                target="_blank"
+                rel="noopener"
+                class="flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-divaPink to-divaGold px-8 py-4 text-base font-bold text-white shadow-lg shadow-pink-500/25 transition-all duration-300 hover:-translate-y-1"
+              >
+                <i class="fab fa-whatsapp text-xl"></i>
+                Agendar por WhatsApp
+              </a>
+
+              <a
+                href="#servicios"
+                class="flex items-center justify-center gap-2 rounded-xl border border-divaGold/30 bg-white/70 px-8 py-4 text-base font-bold text-divaInk transition-all duration-300 hover:bg-white"
+              >
+                Ver servicios
+              </a>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 pt-2 text-center sm:max-w-lg lg:text-left">
+              <div class="rounded-2xl border border-pink-100 bg-white/70 p-3 shadow-sm">
+                <p class="text-lg font-extrabold text-divaInk">Cali</p>
+                <p class="text-xs text-gray-500">atención local</p>
+              </div>
+              <div class="rounded-2xl border border-pink-100 bg-white/70 p-3 shadow-sm">
+                <p class="text-lg font-extrabold text-divaInk">Spa</p>
+                <p class="text-xs text-gray-500">uñas y belleza</p>
+              </div>
+              <div class="rounded-2xl border border-pink-100 bg-white/70 p-3 shadow-sm">
+                <p class="text-lg font-extrabold text-divaInk">Diva</p>
+                <p class="text-xs text-gray-500">acabado glam</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-[340px]">
+            <div class="absolute -inset-6 rounded-full bg-divaPink/20 blur-3xl"></div>
+            <div class="relative rotate-2 rounded-[1.75rem] bg-gradient-to-tr from-divaPink via-divaGold to-divaGoldLight p-2.5 shadow-2xl shadow-pink-300/50 transition-transform duration-500 hover:rotate-0">
+              <div class="rounded-[1.35rem] bg-white p-3">
+                <img
+                  src="./assets/img/logo-display.jpg"
+                  alt="Ponte Diva Spa By Diana"
+                  class="aspect-square w-full rounded-[1.25rem] object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 w-full rotate-180 overflow-hidden leading-[0]">
+          <svg viewBox="0 0 1200 120" preserveAspectRatio="none" class="relative block h-[42px] w-full fill-divaCream">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,3,57.05,11.3,87.67,20,169.17,43.34,251.2,69.56,321.39,56.44Z"></path>
+          </svg>
+        </div>
+      </section>
+
+      <section id="servicios" class="mx-auto max-w-6xl px-4 py-20">
+        <div class="mb-12 text-center">
+          <span class="mb-2 block font-semibold uppercase tracking-wider text-divaGold">Lo que hacemos</span>
+          <h2 class="text-3xl font-bold text-divaInk md:text-4xl">Servicios para verte divina</h2>
+          <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-600">
+            Agenda por WhatsApp y recibe información de disponibilidad, duración y recomendaciones según el servicio.
+          </p>
+          <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-divaPink"></div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <article class="flex flex-col justify-between overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="p-6">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-pink-100 text-xl text-divaPink">
+                <i class="fas fa-hand-sparkles"></i>
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-divaInk">Uñas soft gel</h3>
+              <p class="text-sm leading-relaxed text-gray-600">Extensiones ligeras, lindas y cómodas para un look femenino con acabado pulido.</p>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20el%20servicio%20de%20u%C3%B1as%20soft%20gel.%20%C2%BFMe%20das%20informaci%C3%B3n%20y%20disponibilidad?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+                <i class="fab fa-whatsapp"></i>
+                Consultar / Agendar
+              </a>
+            </div>
+          </article>
+
+          <article class="flex flex-col justify-between overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="p-6">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-xl text-divaGold">
+                <i class="fas fa-gem"></i>
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-divaInk">Acrílicas y esculpidas</h3>
+              <p class="text-sm leading-relaxed text-gray-600">Uñas acrílicas con tip o esculpidas para quienes quieren más largo, estructura y presencia.</p>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20informaci%C3%B3n%20sobre%20u%C3%B1as%20acr%C3%ADlicas%20o%20esculpidas.%20%C2%BFQu%C3%A9%20cupos%20tienes?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+                <i class="fab fa-whatsapp"></i>
+                Consultar / Agendar
+              </a>
+            </div>
+          </article>
+
+          <article class="flex flex-col justify-between overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="p-6">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-pink-100 text-xl text-divaPink">
+                <i class="fas fa-fill-drip"></i>
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-divaInk">Base rubber & builder gel</h3>
+              <p class="text-sm leading-relaxed text-gray-600">Refuerzo, nivelación y duración para uñas naturales que necesitan más soporte y brillo.</p>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20base%20rubber%20o%20builder%20gel.%20%C2%BFMe%20cuentas%20cu%C3%A1l%20me%20recomiendas?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+                <i class="fab fa-whatsapp"></i>
+                Consultar / Agendar
+              </a>
+            </div>
+          </article>
+
+          <article class="flex flex-col justify-between overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="p-6">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-xl text-divaGold">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-divaInk">Semipermanente</h3>
+              <p class="text-sm leading-relaxed text-gray-600">Esmaltado semipermanente para manos, pies y hombres, con acabado limpio y duradero.</p>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20agendar%20semipermanente.%20%C2%BFQu%C3%A9%20disponibilidad%20tienes?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+                <i class="fab fa-whatsapp"></i>
+                Consultar / Agendar
+              </a>
+            </div>
+          </article>
+
+          <article class="flex flex-col justify-between overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="p-6">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-pink-100 text-xl text-divaPink">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-divaInk">Pestañas punto a punto</h3>
+              <p class="text-sm leading-relaxed text-gray-600">Realza tu mirada con un acabado delicado, femenino y cómodo para el día a día.</p>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20informaci%C3%B3n%20sobre%20pesta%C3%B1as%20punto%20a%20punto.%20%C2%BFTienes%20agenda?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+                <i class="fab fa-whatsapp"></i>
+                Consultar / Agendar
+              </a>
+            </div>
+          </article>
+
+          <article class="flex flex-col justify-between overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="p-6">
+              <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-xl text-divaGold">
+                <i class="fas fa-spa"></i>
+              </div>
+              <h3 class="mb-2 text-xl font-bold text-divaInk">Cejas y depilación</h3>
+              <p class="text-sm leading-relaxed text-gray-600">Cejas en henna y depilación en cera según la zona, para un acabado definido y cuidado.</p>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20cejas%20en%20henna%20o%20depilaci%C3%B3n%20en%20cera.%20%C2%BFMe%20das%20informaci%C3%B3n?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+                <i class="fab fa-whatsapp"></i>
+                Consultar / Agendar
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="galeria" class="bg-white py-20">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="mb-14 text-center">
+            <span class="mb-2 block font-semibold uppercase tracking-wider text-divaGold">Galería real</span>
+            <h2 class="text-3xl font-bold text-divaInk md:text-4xl">Trabajos con brillo diva</h2>
+            <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-600">
+              Fotos reales para mostrar acabados, tonos y detalles que pueden inspirar tu próxima cita.
+            </p>
+            <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-divaPink"></div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
+            <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <div class="aspect-square w-full overflow-hidden">
+                <img src="./assets/img/work-1.jpeg" alt="Diseño de uñas Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span class="mb-2 text-sm font-bold text-white">Diseño delicado</span>
+                <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Vi%20un%20dise%C3%B1o%20en%20la%20galer%C3%ADa%20y%20quiero%20algo%20parecido." target="_blank" rel="noopener" class="flex items-center gap-1.5 rounded-xl bg-divaPink px-4 py-2 text-xs font-semibold text-white shadow transition-colors duration-300 hover:bg-white hover:text-divaInk">
+                  <i class="fab fa-whatsapp"></i>
+                  Lo quiero así
+                </a>
+              </div>
+            </article>
+
+            <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <div class="aspect-square w-full overflow-hidden">
+                <img src="./assets/img/work-2.jpeg" alt="Uñas realizadas en Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span class="mb-2 text-sm font-bold text-white">Acabado glam</span>
+                <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20gust%C3%B3%20un%20trabajo%20de%20la%20galer%C3%ADa.%20%C2%BFMe%20das%20informaci%C3%B3n?" target="_blank" rel="noopener" class="flex items-center gap-1.5 rounded-xl bg-divaPink px-4 py-2 text-xs font-semibold text-white shadow transition-colors duration-300 hover:bg-white hover:text-divaInk">
+                  <i class="fab fa-whatsapp"></i>
+                  Lo quiero así
+                </a>
+              </div>
+            </article>
+
+            <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <div class="aspect-square w-full overflow-hidden">
+                <img src="./assets/img/work-3.jpeg" alt="Trabajo de manicura Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span class="mb-2 text-sm font-bold text-white">Manos cuidadas</span>
+                <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20agendar%20un%20servicio%20de%20u%C3%B1as%20como%20los%20de%20la%20galer%C3%ADa." target="_blank" rel="noopener" class="flex items-center gap-1.5 rounded-xl bg-divaPink px-4 py-2 text-xs font-semibold text-white shadow transition-colors duration-300 hover:bg-white hover:text-divaInk">
+                  <i class="fab fa-whatsapp"></i>
+                  Lo quiero así
+                </a>
+              </div>
+            </article>
+
+            <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <div class="aspect-square w-full overflow-hidden">
+                <img src="./assets/img/work-5.jpeg" alt="Diseño de uñas en Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                <span class="mb-2 text-sm font-bold text-white">Pestañas punto a punto</span>
+                <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20hacerme%20un%20dise%C3%B1o%20inspirado%20en%20tu%20galer%C3%ADa." target="_blank" rel="noopener" class="flex items-center gap-1.5 rounded-xl bg-divaPink px-4 py-2 text-xs font-semibold text-white shadow transition-colors duration-300 hover:bg-white hover:text-divaInk">
+                  <i class="fab fa-whatsapp"></i>
+                  Lo quiero así
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <div class="mt-10 text-center">
+            <a href="https://www.instagram.com/ponte_diva1/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border-b border-divaGold/40 pb-1 text-sm font-semibold text-divaGold transition-colors duration-300 hover:text-divaPink">
+              <i class="fab fa-instagram text-base"></i>
+              Ver más en Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="bg-divaCream py-20">
+        <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 px-4 lg:grid-cols-[0.95fr_1.05fr]">
+          <div class="relative mx-auto w-full max-w-sm">
+            <div class="absolute -inset-6 rounded-full bg-divaPink/20 blur-3xl"></div>
+            <img
+              src="./assets/img/logo-display.jpg"
+              alt="Ponte Diva Spa"
+              class="relative rounded-full border-4 border-white object-cover shadow-2xl shadow-pink-200"
+            />
+          </div>
+
+          <div class="text-center lg:text-left">
+            <span class="mb-2 block font-semibold uppercase tracking-wider text-divaGold">El toque Ponte Diva</span>
+            <h2 class="text-3xl font-bold text-divaInk md:text-4xl">Belleza con detalle, brillo y delicadeza</h2>
+            <p class="mt-4 text-sm leading-relaxed text-gray-600">
+              Una experiencia pensada para cuidar cada detalle: manos, mirada, cejas y piel. La idea es que el proceso se sienta cómodo y el resultado se vea elegante.
+            </p>
+
+            <div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <div class="rounded-2xl border border-pink-100 bg-divaRose p-4">
+                <i class="fas fa-heart text-divaPink"></i>
+                <p class="mt-2 text-sm font-bold text-divaInk">Acabados femeninos</p>
+              </div>
+              <div class="rounded-2xl border border-yellow-100 bg-white p-4">
+                <i class="fas fa-crown text-divaGold"></i>
+                <p class="mt-2 text-sm font-bold text-divaInk">Estética rosa y dorada</p>
+              </div>
+              <div class="rounded-2xl border border-pink-100 bg-divaRose p-4">
+                <i class="fab fa-instagram text-divaPink"></i>
+                <p class="mt-2 text-sm font-bold text-divaInk">Síguenos en Instagram</p>
+              </div>
+            </div>
+
+            <a
+              href="https://www.instagram.com/ponte_diva1/"
+              target="_blank"
+              rel="noopener"
+              class="mt-8 inline-flex items-center justify-center gap-2 rounded-xl border border-divaGold/40 bg-white px-6 py-3 text-sm font-bold text-divaGold shadow-sm transition hover:bg-divaGold hover:text-white"
+            >
+              <i class="fab fa-instagram"></i>
+              Ver Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="ubicacion" class="border-t border-pink-100 bg-divaCream py-20">
+        <div class="mx-auto max-w-5xl px-4">
+          <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+            <div class="space-y-6 text-center md:text-left">
+              <div>
+                <span class="mb-2 block font-semibold uppercase tracking-wider text-divaPink">¿Dónde estamos?</span>
+                <h2 class="text-3xl font-bold text-divaInk">Visítanos en Ponte Diva</h2>
+                <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-divaGold md:mx-0"></div>
+              </div>
+
+              <p class="text-sm leading-relaxed text-gray-600">
+                Agenda tu cita y ven a consentirte en Ponte Diva Spa. Te recomendamos escribir primero por WhatsApp para confirmar disponibilidad.
+              </p>
+
+              <div class="space-y-4 pt-2">
+                <div class="flex items-center gap-4 rounded-xl border border-pink-100 bg-white p-4">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-pink-100 text-lg text-divaPink">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div class="text-left">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400">Dirección</h4>
+                    <p class="text-sm font-semibold text-gray-800">Carrera 26 P3 # 93-10</p>
+                    <p class="text-xs text-gray-500">Cali, Colombia</p>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-4 rounded-xl border border-pink-100 bg-white p-4">
+                  <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-pink-100 text-lg text-divaPink">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div class="text-left">
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-gray-400">Horario de atención</h4>
+                    <p class="text-sm font-semibold text-gray-800">Lunes a sábado: 10:00 AM - 9:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Carrera%2026%20P3%20%2393-10%20Cali%20Colombia"
+                target="_blank"
+                rel="noopener"
+                class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-6 py-3.5 text-sm font-bold text-white shadow transition-colors duration-300 hover:bg-divaPink sm:w-auto"
+              >
+                <i class="fas fa-route"></i>
+                Cómo llegar
+              </a>
+            </div>
+
+            <div class="relative h-[310px] overflow-hidden rounded-2xl border border-pink-100 bg-white shadow-lg sm:h-[360px]">
+              <iframe
+                src="https://maps.google.com/maps?q=Carrera%2026%20P3%20%2393-10%20Cali%20Colombia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                class="h-full w-full border-0"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Ubicación Ponte Diva Spa"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-divaInk px-4 py-8 text-center text-sm text-pink-100">
+      <p>&copy; <span id="currentYear">2026</span> Ponte Diva Spa. Hecho con brillo y amor.</p>
+    </footer>
+
+    <a
+      href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20agendar%20una%20cita%20en%20Ponte%20Diva."
+      target="_blank"
+      rel="noopener"
+      class="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 p-4 text-2xl text-white shadow-2xl transition-all hover:scale-110 hover:bg-green-600"
+      aria-label="Agendar por WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
