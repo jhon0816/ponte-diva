@@ -12,6 +12,9 @@
     <link rel="icon" type="image/png" sizes="64x64" href="./assets/img/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -20,6 +23,10 @@
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              sans: ["Outfit", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+            },
             colors: {
               divaPink: "#f472b6",
               divaRose: "#fff1f6",
@@ -31,6 +38,65 @@
           },
         },
       };
+    </script>
+
+    <!-- Metadatos Open Graph / Facebook / WhatsApp (Optimización para compartir) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.instagram.com/ponte_diva1/" />
+    <meta property="og:title" content="Ponte Diva Spa | Uñas y Belleza en Cali" />
+    <meta property="og:description" content="Ponte Diva Spa en Cali: uñas soft gel, acrílicas, pestañas punto a punto, cejas en henna, depilación en cera y servicios de belleza. Agenda por WhatsApp." />
+    <meta property="og:image" content="https://www.instagram.com/ponte_diva1/" /> <!-- NOTA: Para producción, cambiar esta URL por el enlace absoluto de tu logo una vez subido al hosting (ej. https://tudominio.com/assets/img/logo-display.jpg) -->
+
+    <!-- Metadatos Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ponte Diva Spa | Uñas y Belleza en Cali" />
+    <meta name="twitter:description" content="Ponte Diva Spa en Cali: uñas soft gel, acrílicas, pestañas punto a punto, cejas en henna, depilación en cera y servicios de belleza. Agenda por WhatsApp." />
+    <meta name="twitter:image" content="https://www.instagram.com/ponte_diva1/" />
+
+    <!-- SEO Local y Datos Estructurados (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Ponte Diva Spa",
+      "image": [
+        "https://www.instagram.com/ponte_diva1/"
+      ],
+      "description": "Ponte Diva Spa en Cali: uñas soft gel, acrílicas, base rubber, pestañas punto a punto, cejas en henna y depilación en cera.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Carrera 26 P3 # 93-10",
+        "addressLocality": "Cali",
+        "addressRegion": "Valle del Cauca",
+        "addressCountry": "CO"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 3.420556,
+        "longitude": -76.522222
+      },
+      "url": "https://www.instagram.com/ponte_diva1/",
+      "telephone": "+573104639162",
+      "priceRange": "$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "21:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/ponte_diva1/"
+      ]
+    }
     </script>
   </head>
   <body class="bg-divaCream text-divaInk antialiased">
@@ -103,9 +169,9 @@
               Uñas, pestañas y belleza en Cali
             </div>
 
-            <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-divaInk sm:text-5xl md:text-6xl">
+            <h1 class="font-serif text-4xl font-extrabold leading-tight tracking-tight text-divaInk sm:text-5xl md:text-6xl">
               Ponte diva con un look
-              <span class="block bg-gradient-to-r from-divaPink via-divaGold to-divaGoldLight bg-clip-text text-transparent">
+              <span class="block font-sans bg-gradient-to-r from-divaPink via-divaGold to-divaGoldLight bg-clip-text text-transparent">
                 delicado, brillante y femenino
               </span>
             </h1>
@@ -173,7 +239,7 @@
       <section id="servicios" class="mx-auto max-w-6xl px-4 py-20">
         <div class="mb-12 text-center">
           <span class="mb-2 block font-semibold uppercase tracking-wider text-divaGold">Lo que hacemos</span>
-          <h2 class="text-3xl font-bold text-divaInk md:text-4xl">Servicios para verte divina</h2>
+          <h2 class="font-serif text-3xl font-bold text-divaInk md:text-4xl">Servicios para verte divina</h2>
           <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-600">
             Agenda por WhatsApp y recibe información de disponibilidad, duración y recomendaciones según el servicio.
           </p>
@@ -188,9 +254,17 @@
               </div>
               <h3 class="mb-2 text-xl font-bold text-divaInk">Uñas soft gel</h3>
               <p class="text-sm leading-relaxed text-gray-600">Extensiones ligeras, lindas y cómodas para un look femenino con acabado pulido.</p>
+              
+              <div class="mt-5 border-t border-pink-50 pt-4 space-y-2">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Uñas soft gel</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$70.000</span>
+                </div>
+              </div>
             </div>
             <div class="p-6 pt-0">
-              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20el%20servicio%20de%20u%C3%B1as%20soft%20gel.%20%C2%BFMe%20das%20informaci%C3%B3n%20y%20disponibilidad?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20el%20servicio%20de%20u%C3%B1as%20soft%20gel%20%28%2470.000%29.%20%C2%BFMe%20das%20informaci%C3%B3n%20y%20disponibilidad%3F" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
                 <i class="fab fa-whatsapp"></i>
                 Consultar / Agendar
               </a>
@@ -204,9 +278,22 @@
               </div>
               <h3 class="mb-2 text-xl font-bold text-divaInk">Acrílicas y esculpidas</h3>
               <p class="text-sm leading-relaxed text-gray-600">Uñas acrílicas con tip o esculpidas para quienes quieren más largo, estructura y presencia.</p>
+              
+              <div class="mt-5 border-t border-pink-50 pt-4 space-y-2">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Acrílicas con tip</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$90.000</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Uñas esculpidas</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$100.000</span>
+                </div>
+              </div>
             </div>
             <div class="p-6 pt-0">
-              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20informaci%C3%B3n%20sobre%20u%C3%B1as%20acr%C3%ADlicas%20o%20esculpidas.%20%C2%BFQu%C3%A9%20cupos%20tienes?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20informaci%C3%B3n%20sobre%20u%C3%B1as%20acr%C3%ADlicas%20o%20esculpidas.%20%C2%BFQu%C3%A9%20cupos%20tienes%3F" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
                 <i class="fab fa-whatsapp"></i>
                 Consultar / Agendar
               </a>
@@ -220,9 +307,22 @@
               </div>
               <h3 class="mb-2 text-xl font-bold text-divaInk">Base rubber & builder gel</h3>
               <p class="text-sm leading-relaxed text-gray-600">Refuerzo, nivelación y duración para uñas naturales que necesitan más soporte y brillo.</p>
+              
+              <div class="mt-5 border-t border-pink-50 pt-4 space-y-2">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Base rubber</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$60.000</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Builder gel</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$70.000</span>
+                </div>
+              </div>
             </div>
             <div class="p-6 pt-0">
-              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20base%20rubber%20o%20builder%20gel.%20%C2%BFMe%20cuentas%20cu%C3%A1l%20me%20recomiendas?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20base%20rubber%20o%20builder%20gel.%20%C2%BFMe%20cuentas%20cu%C3%A1l%20me%20recomiendas%3F" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
                 <i class="fab fa-whatsapp"></i>
                 Consultar / Agendar
               </a>
@@ -234,11 +334,34 @@
               <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-yellow-100 text-xl text-divaGold">
                 <i class="fas fa-paint-brush"></i>
               </div>
-              <h3 class="mb-2 text-xl font-bold text-divaInk">Semipermanente</h3>
+              <h3 class="mb-2 text-xl font-bold text-divaInk">Semipermanente y Tradicional</h3>
               <p class="text-sm leading-relaxed text-gray-600">Esmaltado semipermanente para manos, pies y hombres, con acabado limpio y duradero.</p>
+              
+              <div class="mt-5 border-t border-pink-50 pt-4 space-y-2">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Semipermanente</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$45.000</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Semipermanente pies</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$40.000</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Semipermanente hombre</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$35.000</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Esmaltado tradicional</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$16.000</span>
+                </div>
+              </div>
             </div>
             <div class="p-6 pt-0">
-              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20agendar%20semipermanente.%20%C2%BFQu%C3%A9%20disponibilidad%20tienes?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20agendar%20semipermanente%20o%20tradicional.%20%C2%BFQu%C3%A9%20disponibilidad%20tienes%3F" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
                 <i class="fab fa-whatsapp"></i>
                 Consultar / Agendar
               </a>
@@ -252,9 +375,17 @@
               </div>
               <h3 class="mb-2 text-xl font-bold text-divaInk">Pestañas punto a punto</h3>
               <p class="text-sm leading-relaxed text-gray-600">Realza tu mirada con un acabado delicado, femenino y cómodo para el día a día.</p>
+              
+              <div class="mt-5 border-t border-pink-50 pt-4 space-y-2">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Pestañas punto a punto</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$30.000</span>
+                </div>
+              </div>
             </div>
             <div class="p-6 pt-0">
-              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20informaci%C3%B3n%20sobre%20pesta%C3%B1as%20punto%20a%20punto.%20%C2%BFTienes%20agenda?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Quiero%20informaci%C3%B3n%20sobre%20pesta%C3%B1as%20punto%20a%20punto%20%28%2430.000%29.%20%C2%BFTienes%20agenda%3F" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
                 <i class="fab fa-whatsapp"></i>
                 Consultar / Agendar
               </a>
@@ -268,9 +399,22 @@
               </div>
               <h3 class="mb-2 text-xl font-bold text-divaInk">Cejas y depilación</h3>
               <p class="text-sm leading-relaxed text-gray-600">Cejas en henna y depilación en cera según la zona, para un acabado definido y cuidado.</p>
+              
+              <div class="mt-5 border-t border-pink-50 pt-4 space-y-2">
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Cejas en henna</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold font-mono">$30.000</span>
+                </div>
+                <div class="flex items-center justify-between text-sm">
+                  <span class="text-gray-700 font-medium">Depilación en cera</span>
+                  <div class="flex-grow border-b border-dotted border-pink-200 mx-2"></div>
+                  <span class="font-extrabold text-divaGold text-xs uppercase bg-pink-50 px-2 py-0.5 rounded text-divaPink">Según zona</span>
+                </div>
+              </div>
             </div>
             <div class="p-6 pt-0">
-              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20cejas%20en%20henna%20o%20depilaci%C3%B3n%20en%20cera.%20%C2%BFMe%20das%20informaci%C3%B3n?" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
+              <a href="https://wa.me/573104639162?text=Hola%20Diana!%20Me%20interesa%20cejas%20en%20henna%20o%20depilaci%C3%B3n%20en%20cera.%20%C2%BFMe%20das%20informaci%C3%B3n%3F" target="_blank" rel="noopener" class="flex w-full items-center justify-center gap-2 rounded-xl bg-divaInk px-4 py-2.5 text-sm font-medium text-white transition-colors duration-300 hover:bg-divaPink">
                 <i class="fab fa-whatsapp"></i>
                 Consultar / Agendar
               </a>
@@ -283,7 +427,7 @@
         <div class="mx-auto max-w-6xl px-4">
           <div class="mb-14 text-center">
             <span class="mb-2 block font-semibold uppercase tracking-wider text-divaGold">Galería real</span>
-            <h2 class="text-3xl font-bold text-divaInk md:text-4xl">Trabajos con brillo diva</h2>
+            <h2 class="font-serif text-3xl font-bold text-divaInk md:text-4xl">Trabajos con brillo diva</h2>
             <p class="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-gray-600">
               Fotos reales para mostrar acabados, tonos y detalles que pueden inspirar tu próxima cita.
             </p>
@@ -293,7 +437,7 @@
           <div class="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
             <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div class="aspect-square w-full overflow-hidden">
-                <img src="./assets/img/work-1.jpeg" alt="Diseño de uñas Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src="./assets/img/work-1.jpeg" alt="Diseño de uñas Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               </div>
               <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span class="mb-2 text-sm font-bold text-white">Diseño delicado</span>
@@ -306,7 +450,7 @@
 
             <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div class="aspect-square w-full overflow-hidden">
-                <img src="./assets/img/work-2.jpeg" alt="Uñas realizadas en Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src="./assets/img/work-2.jpeg" alt="Uñas realizadas en Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               </div>
               <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span class="mb-2 text-sm font-bold text-white">Acabado glam</span>
@@ -319,7 +463,7 @@
 
             <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div class="aspect-square w-full overflow-hidden">
-                <img src="./assets/img/work-3.jpeg" alt="Trabajo de manicura Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src="./assets/img/work-3.jpeg" alt="Trabajo de manicura Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               </div>
               <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span class="mb-2 text-sm font-bold text-white">Manos cuidadas</span>
@@ -332,7 +476,7 @@
 
             <article class="group relative overflow-hidden rounded-2xl border border-pink-100 bg-divaRose shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
               <div class="aspect-square w-full overflow-hidden">
-                <img src="./assets/img/work-5.jpeg" alt="Diseño de uñas en Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src="./assets/img/work-5.jpeg" alt="Diseño de uñas en Ponte Diva" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" />
               </div>
               <div class="absolute inset-0 flex flex-col items-center justify-center bg-divaInk/60 p-4 text-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <span class="mb-2 text-sm font-bold text-white">Pestañas punto a punto</span>
@@ -361,12 +505,13 @@
               src="./assets/img/logo-display.jpg"
               alt="Ponte Diva Spa"
               class="relative rounded-full border-4 border-white object-cover shadow-2xl shadow-pink-200"
+              loading="lazy"
             />
           </div>
 
           <div class="text-center lg:text-left">
             <span class="mb-2 block font-semibold uppercase tracking-wider text-divaGold">El toque Ponte Diva</span>
-            <h2 class="text-3xl font-bold text-divaInk md:text-4xl">Belleza con detalle, brillo y delicadeza</h2>
+            <h2 class="font-serif text-3xl font-bold text-divaInk md:text-4xl">Belleza con detalle, brillo y delicadeza</h2>
             <p class="mt-4 text-sm leading-relaxed text-gray-600">
               Una experiencia pensada para cuidar cada detalle: manos, mirada, cejas y piel. La idea es que el proceso se sienta cómodo y el resultado se vea elegante.
             </p>
@@ -405,7 +550,7 @@
             <div class="space-y-6 text-center md:text-left">
               <div>
                 <span class="mb-2 block font-semibold uppercase tracking-wider text-divaPink">¿Dónde estamos?</span>
-                <h2 class="text-3xl font-bold text-divaInk">Visítanos en Ponte Diva</h2>
+                <h2 class="font-serif text-3xl font-bold text-divaInk">Visítanos en Ponte Diva</h2>
                 <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-divaGold md:mx-0"></div>
               </div>
 
